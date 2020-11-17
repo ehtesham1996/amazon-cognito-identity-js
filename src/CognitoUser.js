@@ -94,6 +94,23 @@ export default class CognitoUser {
   }
 
   /**
+   * Gets the session of authentication for the user
+   * @returns {userSession} session for user
+   */
+  getAuthenticationSession() {
+    return this.Session;
+  }
+
+  /**
+   * Set the session to be used by authentication flow
+   * @param {*} session session keyword to set for
+   * @returns {void}
+   */
+  setAuthenticationSession(session) {
+    this.Session = session;
+  }
+
+  /**
    * Sets the session for this user
    * @param {CognitoUserSession} signInUserSession the session
    * @returns {void}
