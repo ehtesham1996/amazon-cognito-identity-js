@@ -1,4 +1,4 @@
-declare module "amazon-cognito-identity-js" {
+declare module "@ehtesham1996/amazon-cognito-identity" {
 
     import * as AWS from "aws-sdk";
 
@@ -35,7 +35,7 @@ declare module "amazon-cognito-identity-js" {
 
         public getAuthenticationSession():any;
         public setAuthenticationSession():any;
-        
+
         public setSignInUserSession(signInUserSession: CognitoUserSession): void;
         public getSignInUserSession(): CognitoUserSession | null;
         public getUsername(): string;
